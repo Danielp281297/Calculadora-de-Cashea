@@ -10,210 +10,6 @@
         android:orientation="vertical"
         >
 
-    <SeekBar
-            android:layout_width="409dp"
-            android:layout_height="29dp"
-            android:id="@+id/entradaSeekBar"
-            android:min="25"
-            android:max="5000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            android:progressBackgroundTint="@color/black"
-            android:hapticFeedbackEnabled="true"
-            android:layout_marginTop="20dp"
-
-            android:thumbTint="@color/primaryColor"
-            />
-
-    <RadioGroup
-            android:layout_width="249dp"
-            android:layout_height="49dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:id="@+id/nivelCasheaGroup"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="0.5"
-            >
-
-        <RadioButton
-                android:text="1"
-                android:layout_height="50sp"
-                android:id="@+id/nivel1Check"
-                android:layout_width="50sp"/>
-
-        <RadioButton
-                android:text="2"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:id="@+id/nivel2Check"/>
-
-        <RadioButton
-                android:text="3"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:id="@+id/nivel3Check"/>
-
-        <RadioButton
-                android:text="4"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:id="@+id/nivel4Check"/>
-
-        <RadioButton
-                android:text="5"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:id="@+id/nivel5Check"/>
-    </RadioGroup>
-
-    <RadioGroup
-            android:layout_width="248dp"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:id="@+id/cuotasGroup"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintHorizontal_bias="0.5"
-            >
-
-        <RadioButton
-                android:text="3"
-                android:layout_height="50sp"
-                android:id="@+id/cuota3Check"
-                android:layout_width="50sp"/>
-
-        <RadioButton
-                android:text="6"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:id="@+id/cuota6Check"/>
-
-        <RadioButton
-                android:text="9"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:id="@+id/cuota9Check"/>
-
-        <RadioButton
-                android:text="12"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:id="@+id/cuota12Check"/>
-
-        <RadioButton
-                android:text="15"
-                android:layout_width="50sp"
-                android:layout_height="50sp"
-                android:id="@+id/cuota15Check"/>
-    </RadioGroup>
-
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="50sp"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/saldoText"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintHorizontal_bias="0.5"
-            android:hint="Saldo"
-            android:layout_marginTop="4dp"
-            android:textAlignment="center"
-            />
-
-    <EditText
-            android:layout_width="85dp"
-            android:layout_height="50dp"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/montoText"
-            app:layout_constraintTop_toBottomOf="@+id/entradaSeekBar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:textAlignment="center"
-            app:layout_constraintHorizontal_bias="0.5"
-            android:layout_marginTop="20dp"
-            tools:text="25"
-            android:text="25"
-            android:textStyle="bold"
-            android:backgroundTint="@android:color/transparent"
-            />
-
-    <TextView
-            android:text="Indique el nivel de cashea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            android:layout_marginTop="48dp"
-            />
-
-    <TextView
-            android:text="Indique el saldo de cashea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintTop_toBottomOf="@+id/nivelCasheaGroup"
-            android:layout_marginTop="40dp"
-            />
-
-    <TextView
-            android:text="Indique el monto de cashea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintTop_toBottomOf="@+id/saldoText"
-            android:layout_marginTop="20dp"
-            />
-
-    <TextView
-            android:text="Indique el número de cuotas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView4"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/montoText"
-            android:layout_marginTop="8dp"
-            app:layout_constraintHorizontal_bias="0.5"
-            />
-
-    <TextView
-            android:layout_width="313dp"
-            android:layout_height="125dp"
-            android:id="@+id/ResultadosText"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/cuotasGroup"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:textStyle="bold"
-            app:layout_constraintVertical_bias="0.071"
-            app:layout_constraintHorizontal_bias="0.5"
-            />
-
     <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -221,20 +17,229 @@
             android:id="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.5"
             android:background="@drawable/logo_template"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            android:layout_marginTop="64dp"/>
-
-    <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/toolbar_template"
-            android:theme="?attr/actionBarTheme"
-            android:minHeight="?attr/actionBarSize"
-            android:id="@+id/toolbar"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/tituloText"/>
+
+    <TextView
+            android:text="Calculadora de Cashea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tituloText"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"/>
+
+    <ScrollView
+            android:layout_width="411dp"
+            android:layout_height="410dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/scrollView2"
+            app:layout_constraintTop_toBottomOf="@+id/tituloText"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/cardView">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <TextView
+                    android:text="Indique el nivel de cashea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    android:layout_gravity="center"/>
+
+            <RadioGroup
+                    android:layout_width="249dp"
+                    android:layout_height="49dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/nivelCasheaGroup"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    tools:layout_editor_absoluteY="295dp"
+                    android:layout_gravity="center">
+
+                <RadioButton
+                        android:text="1"
+                        android:layout_height="50sp"
+                        android:id="@+id/nivel1Check"
+                        android:layout_width="50sp"/>
+
+                <RadioButton
+                        android:text="2"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:id="@+id/nivel2Check"/>
+
+                <RadioButton
+                        android:text="3"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:id="@+id/nivel3Check"/>
+
+                <RadioButton
+                        android:text="4"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:id="@+id/nivel4Check"/>
+
+                <RadioButton
+                        android:text="5"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:id="@+id/nivel5Check"/>
+            </RadioGroup>
+
+            <TextView
+                    android:text="Indique el saldo de cashea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/saldoText"
+                    android:hint="Saldo"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:text="Indique el monto de cashea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"/>
+
+            <SeekBar
+                    android:layout_width="409dp"
+                    android:layout_height="29dp"
+                    android:id="@+id/entradaSeekBar"
+                    android:min="25"
+                    android:max="5000"
+                    android:progressBackgroundTint="@color/black"
+                    android:hapticFeedbackEnabled="true"
+                    android:layout_marginTop="20dp"
+
+                    android:thumbTint="@color/primaryColor"
+                    android:layout_gravity="center"/>
+
+            <EditText
+                    android:layout_width="85dp"
+                    android:layout_height="50dp"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/montoText"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    tools:text="25"
+                    android:text="25"
+                    android:textStyle="bold"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_gravity="center"/>
+
+            <TextView
+                    android:text="Indique el número de cuotas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/montoText"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:layout_gravity="center"/>
+
+            <RadioGroup
+                    android:layout_width="248dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/cuotasGroup"
+                    android:layout_gravity="center">
+
+                <RadioButton
+                        android:text="3"
+                        android:layout_height="50sp"
+                        android:id="@+id/cuota3Check"
+                        android:layout_width="50sp"/>
+
+                <RadioButton
+                        android:text="6"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:id="@+id/cuota6Check"/>
+
+                <RadioButton
+                        android:text="9"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:id="@+id/cuota9Check"/>
+
+                <RadioButton
+                        android:text="12"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:id="@+id/cuota12Check"/>
+
+                <RadioButton
+                        android:text="15"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:id="@+id/cuota15Check"/>
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="388dp"
+            android:layout_height="155dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:title="@string/app_name"/>
+            app:layout_constraintHorizontal_bias="0.5"
+            android:id="@+id/cardView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintVertical_bias="0.5"
+            app:cardCornerRadius="25dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ResultadosText"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
